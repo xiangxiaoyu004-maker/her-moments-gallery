@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="关于她的片刻，一座可以慢慢穿行的悬浮照片影廊。">
+  <meta name="robots" content="noindex,nofollow">
+  <title>关于她的片刻 · HER MOMENTS</title>
+  <link rel="preload" as="image" href="assets/01-thumb.jpg">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="photos.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <main class="exhibition" aria-label="关于她的片刻，悬浮照片影廊">
+    <div class="atmosphere" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="top">
+      <span class="monogram" aria-hidden="true">h.</span>
+      <span class="wordmark">HER MOMENTS<br>PRIVATE PHOTO EXHIBITION</span>
+    </header>
+    <div class="heading">
+      <p class="eyebrow">A LITTLE UNIVERSE OF HER</p>
+      <h1>关于她的片刻</h1>
+      <p class="subheading">让喜欢的瞬间，悬浮在这里。</p>
+    </div>
+    <div class="ghost" aria-hidden="true">Her.</div>
+    <div class="orbit" aria-hidden="true"></div>
+    <div class="floor" aria-hidden="true"></div>
+    <div class="space" aria-label="照片空间，上下拖动穿行，点击照片放大"></div>
+    <footer class="bottom">
+      <div class="meta">
+        <div class="navigation">
+          <div class="counter"><span class="current" aria-live="polite">01</span><span class="total">/ 30</span></div>
+          <div class="arrows">
+            <button type="button" class="arrow gallery-previous" aria-label="移到上一张照片">‹</button>
+            <button type="button" class="arrow gallery-next" aria-label="移到下一张照片">›</button>
+          </div>
+        </div>
+        <span class="hint">上下滑动穿行 · 轻点照片聚焦</span>
+      </div>
+      <input class="journey" type="range" min="0" max="29" step="0.01" value="0" aria-label="穿行照片空间">
+      <div class="bottom-line"><span>FLOATING GALLERY</span><span>30 PHOTOGRAPHS</span></div>
+    </footer>
+  </main>
+  <dialog class="viewer" aria-label="放大查看照片">
+    <div class="viewer-layout">
+      <div class="viewer-top">
+        <button class="text-button viewer-close" type="button">返回影廊</button>
+        <span class="viewer-counter" aria-live="polite"></span>
+      </div>
+      <div class="viewer-stage"><img class="viewer-photo" alt="" decoding="async"></div>
+      <div class="viewer-bottom">
+        <button class="text-button viewer-previous" type="button">上一张</button>
+        <span class="viewer-signature">HER MOMENTS</span>
+        <button class="text-button viewer-next" type="button">下一张</button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
